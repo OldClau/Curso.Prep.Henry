@@ -228,6 +228,7 @@ function doWhile(numero) {
   var n = 1;
   do {
     numero = numero + 5;
+    n++;
   }
   while (n <= 8)
   return n;
