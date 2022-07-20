@@ -74,7 +74,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (len(str1) == len(str2))
+  if (str1.lenght == str2.length)
    return true
   else
    return false   
@@ -178,9 +178,9 @@ function esPositivo(numero) {
   if (numero == 0)
    return false
   else if (numero > 0)
-    return "El número es positivo"
+    return "Es positivo"
   else
-    return "El número es negativo"
+    return "Es negativo"
 
 }
 
@@ -247,12 +247,12 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (len(letra) > 1 )
-    console.log("Dato Incorrecto")
+  if (letra.lenght > 1 )
+    return "Dato Incorrecto"
   if (letra=="a" || letra=="e" || letra=="i" || letra=="o" || letra=="u")
-    console.log("Es vocal")
+    return "Es vocal"
   else
-    console.log("Dato Incorrecto")
+    return "Dato Incorrecto"
   
 }
 
