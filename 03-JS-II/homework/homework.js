@@ -131,6 +131,8 @@ function fizzBuzz(numero) {
     return "fizz";
   } else if ((numero % 5) == 0){
     return "buzz";
+  } else {
+    return numero
   }
 } 
 
@@ -146,6 +148,7 @@ function operadoresLogicos(num1, num2, num3) {
   if ( num1 == 0 || num2 == 0 || num3 == 0){
     ok = true;
     dev = "Error";
+    return dev;
   }
   if ((num1 > num2) && (num1 > num3) && (num1 % 2) == 0){
     ok = true;
@@ -205,7 +208,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   let tabla6 = [];
-  for (let i=1;i <= 60; i++){
+  for (let i=0;i <= 10; i++){
     tabla6.push(6*i);
   }
   return tabla6
@@ -231,7 +234,7 @@ function doWhile(numero) {
     n++;
   }
   while (n <= 8)
-  return n;
+  return numero;
 }
 
 
