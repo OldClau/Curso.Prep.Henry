@@ -10,7 +10,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[arrayContiene.length -1];
+  return array[array.length -1];
 }
 
 
@@ -28,7 +28,8 @@ function incrementarPorUno(array) {
   // Tu código:
   var aux = 0;
   for (let i=0; i<array.length; i++){
-    aux = array[i]++;
+    aux = array[i];
+    aux++
     array[i] = aux;
   }
   return array;
@@ -60,8 +61,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var string="";
-  for (let i=0; i<palabras.length; i++){
+  var string=palabras[0];
+  for (let i=1; i<palabras.length; i++){
    string = string + " " + palabras[i];
   }
   return string;
@@ -125,9 +126,15 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  var multiplico = 1;
-  for (var i=0; i < arguments.length; i++) {
-    multiplico = multiplico * arguments[i];
+  if (arguments.length==0){
+    return 0;
+  } else if (arguments.length==1){
+    return arguments[0];
+  } else {
+    var multiplico = 1;
+    for (var i=0; i < arguments.length; i++) {
+     multiplico = multiplico * arguments[i];
+    }
   }
   return multiplico;
   }
@@ -138,7 +145,7 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   var aux=0;
   for (var i=0; i < arreglo.length; i++) {
-    if (arreglo[i]>=18){
+    if (arreglo[i]>18){
       aux++;
     }
  }
@@ -152,7 +159,7 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
   if (numeroDeDia>=2 && numeroDeDia<=6){
-    return "Es día Laboral";
+    return "Es dia Laboral";
   } else {
     return "Es fin de semana";
   } 
@@ -176,9 +183,9 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  var aux = "";
+  var aux = arreglo[0];
   var dev = true
-  for (var i=0; i < arreglo.length; i++) { 
+  for (var i=1; i < arreglo.length; i++) { 
     if (arreglo[i] != aux){
       dev = false;
     }
@@ -199,14 +206,14 @@ function mesesDelAño(array) {
         nvoarray.push("Enero");
       }
       if (array[i]=="Marzo"){
-        nvoarray.puss("Marzo");
+        nvoarray.push("Marzo");
       }
       if (array[i]=="Noviembre"){
         nvoarray.push("Noviembre");
       }
     }
   }
-  if (nvoarray.length()<3){
+  if (nvoarray.length<3){
     return "No se encontraron los meses pedidos";
   } else {
     return nvoarray;
@@ -258,10 +265,8 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   var nvoarray=[];
-  for (let i = 1; i <= 10; i++){
-    if (i=5){
-      continue;
-    }
+  for (let i = 1; i <= 10; i++) {
+    if (i == 5) { continue; }
     numero = numero + 2;
     nvoarray.push(numero);
   }
