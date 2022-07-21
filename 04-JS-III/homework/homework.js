@@ -26,8 +26,10 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var aux = 0;
   for (let i=0; i<array.length; i++){
-    array[i]++;
+    aux = array[i]++;
+    array[i] = aux;
   }
   return array;
 }
@@ -121,7 +123,7 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   var multiplico = 1;
   for (var i=0; i < arguments.length; i++) {
