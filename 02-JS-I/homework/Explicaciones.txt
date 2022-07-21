@@ -1,0 +1,8 @@
+Variable: es como una cajita donde se guardan cosas, por ejemplo un número, una palabra, una frase, un conjunto de números, etc
+Strings: es un tipo de dato, es un texto.
+Funciones: son programas que reciben un valor por parámetro y devuelven un resultado. Por ejemplo, la función Suma(1,2)=3, 
+           los argumentos son 1 y 2, dentro de la función se hace la suma y en este caso devuelve 3
+Declaraciones: if, considera una condición, si esta es verdadera ejecuta una porción de código, si se coloca la sentencia else, 
+               se ejectura cuando la condición sea falsa
+Valores booleanos (true, false): son variables cuyo valor puede ser verdadero (true) o falso (false)
+ 

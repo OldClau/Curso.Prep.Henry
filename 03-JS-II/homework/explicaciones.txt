@@ -1,0 +1,5 @@
+for: itera mientras se cumpla las condiciones especificadas por parámetro y ejecuta el código 
+     que está dentro del for
+&&: and, una condición Y otra. (tengo hambre y frío)
+||: or, una condición o la otra. (tengo hambre o frío)
+!: not, lo contrario a la condición. condición=true, entonces !condición=true
