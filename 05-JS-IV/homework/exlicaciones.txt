@@ -1,0 +1,6 @@
+Objetos: son datos que tienen características (propiedades) y comportamientos (métodos)
+Propiedades: son características de los objetos, por ejemplo el objeto Perro tendrá un nombre, 2 orejas, 
+	     4 patas y 1 cola
+Métodos: son los comportamientos del objeto, el perro ladra, come y hace trucos
+Bucle: for..in, itera dentro de las propiedades enumerables del objeto y ejecuta el código descripto ahí.
+ 

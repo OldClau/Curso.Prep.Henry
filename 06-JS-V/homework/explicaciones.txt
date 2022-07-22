@@ -1,0 +1,3 @@
+En JS no hay clases, para no definir cada vez los métodos en cada objeto, se utiliza prototype al crear 
+el objeto para que herede de otro objeto
+Los constructores los usamos para crear nuevas "clases"

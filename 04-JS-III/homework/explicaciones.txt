@@ -1,0 +1,2 @@
+Arrays: son como un micro, donde cada asiento tiene un número y en cada asiento se pueden ubicar datos de cualquier tipo. 
+Se sabe quién está en cada asiento por el número o la posición del asiento
