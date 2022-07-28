@@ -1,0 +1,57 @@
+.html {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.head {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divclass h1{
+    color: goldenrod;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divclass h2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divclass h3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divClass #spanId{
+    font-size: 18x;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ThirdDiv{
+    height: 600px; 
+    max-width: 500px; 
+    background: tan;
+    padding: 50px;
+    border-color:black;
+    border-style:double;
+    border-width:2px;
+    margin: 0 auto;
+}
