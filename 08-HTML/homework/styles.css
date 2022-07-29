@@ -1,12 +1,3 @@
-.html {
-    background-image: url(../img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-
 .head {
     display:flex;
     justify-content: center;
@@ -14,9 +5,17 @@
 }
 
 .body {
+    width: 100%;
+    height: 100%;    
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.divClass{
+    background-image: url(./fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .divclass h1{
@@ -54,4 +53,8 @@
     border-style:double;
     border-width:2px;
     margin: 0 auto;
+}
+#ThirdDiv img{
+    width: 400;
+    height: 300;
 }
